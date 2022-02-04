@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tblView: UITableView!
     
-    let arr = ["a","b","c","d","e"]
+    let arr = ["a","b","c","d","e","a","b","c","d","e","a","b","c","d","e","a","b","c","d","e","a","b","c","d","e"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
