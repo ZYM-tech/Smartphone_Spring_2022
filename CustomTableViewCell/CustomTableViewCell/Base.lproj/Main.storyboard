@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-Dh-aJm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="y3Q-eI-J73" customClass="TableViewCell" customModule="CustomTableViewCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y3Q-eI-J73" id="81m-rC-Hbj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seattle 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-op-56P">
+                                                    <rect key="frame" x="5" y="265" width="404" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="CvM-rZ-AVk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seattle1" translatesAutoresizingMaskIntoConstraints="NO" id="21e-yC-Kt2">
+                                                    <rect key="frame" x="5" y="5" width="404" height="220"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="21e-yC-Kt2" firstAttribute="leading" secondItem="81m-rC-Hbj" secondAttribute="leadingMargin" constant="5" id="09S-kt-SoX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="21e-yC-Kt2" secondAttribute="trailing" constant="5" id="0vw-vW-wKB"/>
+                                                <constraint firstItem="21e-yC-Kt2" firstAttribute="top" secondItem="81m-rC-Hbj" secondAttribute="top" constant="5" id="9Ho-8s-kLM"/>
+                                                <constraint firstAttribute="trailing" secondItem="21e-yC-Kt2" secondAttribute="trailing" constant="5" id="NqL-x8-IJn"/>
+                                                <constraint firstItem="oqP-op-56P" firstAttribute="leading" secondItem="81m-rC-Hbj" secondAttribute="leading" constant="5" id="Pdh-kA-DJj"/>
+                                                <constraint firstItem="21e-yC-Kt2" firstAttribute="leading" secondItem="81m-rC-Hbj" secondAttribute="leading" constant="5" id="UBS-Yv-6B4"/>
+                                                <constraint firstItem="oqP-op-56P" firstAttribute="top" secondItem="21e-yC-Kt2" secondAttribute="bottom" constant="30" id="YeI-On-5tf"/>
+                                                <constraint firstAttribute="bottom" secondItem="oqP-op-56P" secondAttribute="bottom" constant="5" id="mpa-pf-nDv"/>
+                                                <constraint firstAttribute="trailing" secondItem="oqP-op-56P" secondAttribute="trailing" constant="5" id="pjR-ZB-fFg"/>
+                                                <constraint firstItem="21e-yC-Kt2" firstAttribute="top" secondItem="81m-rC-Hbj" secondAttribute="topMargin" constant="5" id="rnC-Ja-1iz"/>
+                                                <constraint firstItem="oqP-op-56P" firstAttribute="top" secondItem="21e-yC-Kt2" secondAttribute="bottom" constant="40" id="ws7-Jj-L6L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="21e-yC-Kt2" id="WWt-Ze-gD1"/>
+                                            <outlet property="lblCell" destination="oqP-op-56P" id="etb-4V-Xvj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Z0z-cy-3hP"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VH0-Qw-bBa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0OV-Dh-aJm" secondAttribute="trailing" id="KcC-PN-rcy"/>
+                            <constraint firstItem="0OV-Dh-aJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aV6-0s-Coa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0OV-Dh-aJm" secondAttribute="bottom" id="hGy-SK-ewA"/>
+                            <constraint firstItem="0OV-Dh-aJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zYU-1B-JxA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblView" destination="0OV-Dh-aJm" id="xeN-wT-Ux2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Seattle1" width="182.5" height="121.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
