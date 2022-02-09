@@ -20,7 +20,7 @@
                                 <rect key="frame" x="145" y="427" width="124" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to sec VC"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Say Hi"/>
                                 <connections>
                                     <action selector="goToSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYY-NV-OPh"/>
                                 </connections>
@@ -67,6 +67,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHG-Ko-J4j">
+                                <rect key="frame" x="160" y="430" width="94" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Previous"/>
+                                <connections>
+                                    <action selector="goBack:" destination="kNr-8R-7D6" eventType="touchUpInside" id="VMb-wH-TOh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bOG-J7-D2L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
