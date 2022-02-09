@@ -14,6 +14,8 @@
 		FC81C73027AE446F009AC3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC81C72F27AE446F009AC3EB /* Assets.xcassets */; };
 		FC81C73327AE446F009AC3EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC81C73127AE446F009AC3EB /* LaunchScreen.storyboard */; };
 		FC81C73B27AE4515009AC3EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81C73A27AE4515009AC3EB /* TableViewCell.swift */; };
+		FCCF297127B3B0B600E28177 /* Sec_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF296F27B3B0B600E28177 /* Sec_TableViewCell.swift */; };
+		FCCF297227B3B0B600E28177 /* Sec_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCF297027B3B0B600E28177 /* Sec_TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FC81C73227AE446F009AC3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC81C73427AE446F009AC3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC81C73A27AE4515009AC3EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FCCF296F27B3B0B600E28177 /* Sec_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sec_TableViewCell.swift; sourceTree = "<group>"; };
+		FCCF297027B3B0B600E28177 /* Sec_TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sec_TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				FC81C73127AE446F009AC3EB /* LaunchScreen.storyboard */,
 				FC81C73427AE446F009AC3EB /* Info.plist */,
 				FC81C73A27AE4515009AC3EB /* TableViewCell.swift */,
+				FCCF296F27B3B0B600E28177 /* Sec_TableViewCell.swift */,
+				FCCF297027B3B0B600E28177 /* Sec_TableViewCell.xib */,
 			);
 			path = FoodImages;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				FC81C73327AE446F009AC3EB /* LaunchScreen.storyboard in Resources */,
 				FC81C73027AE446F009AC3EB /* Assets.xcassets in Resources */,
 				FC81C72E27AE446D009AC3EB /* Main.storyboard in Resources */,
+				FCCF297227B3B0B600E28177 /* Sec_TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 				FC81C73B27AE4515009AC3EB /* TableViewCell.swift in Sources */,
 				FC81C72727AE446D009AC3EB /* AppDelegate.swift in Sources */,
 				FC81C72927AE446D009AC3EB /* SceneDelegate.swift in Sources */,
+				FCCF297127B3B0B600E28177 /* Sec_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

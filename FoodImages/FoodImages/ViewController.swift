@@ -26,9 +26,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /*
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         cell.ImgViewCell.image = UIImage(named: img[indexPath.row])
         cell.lblView.text = names[indexPath.row]
+        return cell
+         */
+        
+        let cell = Bundle.main.loadNibNamed("Sec_TableViewCell", owner: self, options: nil)?.first as! Sec_TableViewCell
+        cell.imgView.image = UIImage(named: img[indexPath.row])
+        cell.lblImage.text = names[indexPath.row]
         return cell
     }
 }
